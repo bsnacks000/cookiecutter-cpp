@@ -1,0 +1,18 @@
+
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "~/.conan/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c{{cookiecutter.c_standard}}" ,
+            "cppStandard": "c++{{cookiecutter.cxx_standard}}",
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

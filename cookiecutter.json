@@ -1,0 +1,24 @@
+{
+    "project_name": "myproject",
+    "full_name": "bsnacks000",
+    "short_project_description": "This is an important project description.", 
+    "cxx_standard": [14, 11, 17, 20], 
+    "c_standard": [11, 99],
+    "library_type": ["static", "shared"],
+    "create_extern_directory": "n",
+    "create_application_directory": "y",
+    "app_name": "myapp",
+    "create_public_headers_directory": "n",
+    "unittest_framework": ["gtest", "catch2"],
+    "include_spdlog": "n",
+    "include_boost": "n", 
+    "include_cli11": "n", 
+    "open_source_license": [
+        "MIT license", 
+        "BSD license", 
+        "ISC license", 
+        "Apache Software License 2.0", 
+        "GNU General Public License v3", 
+        "Not open source"
+    ]
+}
