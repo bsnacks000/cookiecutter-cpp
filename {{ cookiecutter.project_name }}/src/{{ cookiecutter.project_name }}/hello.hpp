@@ -3,7 +3,7 @@
 
 namespace hello {
 
-void say();
+void Say();
 
 } // hello
 

@@ -3,7 +3,7 @@
 #include <{{cookiecutter.project_name}}/hello.hpp>
 
 TEST(hellotest, sayHello) {
-    hello::say();
+    hello::Say();
 }
 {% else %}
 #define CATCH_CONFIG_MAIN
@@ -12,7 +12,7 @@ TEST(hellotest, sayHello) {
 #include <{{cookiecutter.project_name}}/hello.hpp>
 
 TEST_CASE("hello was said", "[hello]") {
-    hello::say();
+    hello::Say();
 }
 
 {% endif %}
