@@ -2,7 +2,7 @@
     "project_name": "myproject",
     "full_name": "bsnacks000",
     "short_project_description": "This is an important project description.", 
-    "cxx_standard": [14, 11, 17, 20], 
+    "cxx_standard": [17, 11, 14, 20], 
     "c_standard": [11, 99],
     "library_type": ["static", "shared"],
     "create_extern_directory": "n",

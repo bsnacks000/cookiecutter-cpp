@@ -14,15 +14,11 @@ find_package(Threads REQUIRED)
 
 
 # set language things
-set(CMAKE_CXX_STANDARD {{cookiecutter.cxx_standard}})  # XXX add this to cc
+set(CMAKE_CXX_STANDARD {{cookiecutter.cxx_standard}}) 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_C_STANDARD {{cookiecutter.c_standard}})  # XXX add this to cc
+set(CMAKE_C_STANDARD {{cookiecutter.c_standard}})  
 set(CMAKE_C_STANDARD_REQUIRED ON)
-
-
-set(sources_to_format "")
-set(targets_to_tidy "")
 
 
 {% if cookiecutter.create_extern_directory == 'y' %}
