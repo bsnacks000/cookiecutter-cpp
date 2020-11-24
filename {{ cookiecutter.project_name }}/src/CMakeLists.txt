@@ -1,9 +1,4 @@
 # Configure the project sources and headers within the project namespace
-{% if cookiecutter.create_public_headers_directory == 'y' %}
-set(public_headers 
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/${proj_name}/public.hpp
-)
-{% endif %}
 
 set (sources 
     ${proj_name}/hello.hpp 
@@ -18,19 +13,14 @@ add_library( ${proj_name}
     {%else%}
     SHARED
     {%endif%}
-    {%if cookiecutter.create_public_headers_directory == 'y' %}
-    ${public_headers}
-    {%endif%}
     ${sources}
 )
 
 target_include_directories(${proj_name}
     PUBLIC
-    {%if cookiecutter.create_public_headers_directory == 'y' %}
-    ${CMAKE_SOURCE_DIR}/include 
-    {%endif%}
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CONAN_LIBS}
 )
 
+include_directories(${proj_name})
 

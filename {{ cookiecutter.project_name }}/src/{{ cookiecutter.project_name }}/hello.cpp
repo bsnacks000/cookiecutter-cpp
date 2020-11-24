@@ -2,5 +2,5 @@
 #include "hello.hpp"
 
 void hello::Say() {
-    std::cout << "hello world";
+    std::cout << "oh hai conan..." << std::endl;;
 }
